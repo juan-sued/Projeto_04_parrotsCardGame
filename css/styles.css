@@ -1,0 +1,71 @@
+body{
+  background-color: #EEF9BF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 66px;
+letter-spacing: -0.004em;
+color: #75B79E;
+  
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+.listCards{
+  
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  
+  width: 906px;
+  height: 500px;
+  padding-left: 34px;
+
+}
+.card{
+  height: 147px;
+  width: 117px;
+  background: #A7E9AF;
+  border: 1px solid #99CEA8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 34px 34px 0px 0px
+}
+
+img{
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
