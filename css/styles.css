@@ -25,31 +25,59 @@ main{
   display: flex;
   flex-wrap:wrap;
   align-items: center;
+  justify-content: center;
   
-  width: 906px;
+  width: 1065px;
   height: 500px;
   padding-left: 34px;
 
 }
 .card{
+  transform-style: preserve-3d;
+}
+.face{
   height: 147px;
   width: 117px;
   background: #A7E9AF;
   border: 1px solid #99CEA8;
-  box-sizing: border-box;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 34px 34px 0px 0px
+  transition: all .5s;
+
+  
+  
+}
+.front{
+  transform: rotateY(180deg);
+  background-color: #A7E9AF;
+}
+.back{
+  background-color: #A7E9AF;
+}
+.flip{
+  transform: rotateY(180deg);
 }
 
 img{
   height: 100px;
+  width: 100px;
+
+}
+
+.efeito-virada{
+  transition: all 1s linear;
 }
 
 
 
+@media (max-width: 600px){
+  .topBar{
+    font-size: 28px;
+    transition: all .7s linear;
+  }
+}
 
 
 
