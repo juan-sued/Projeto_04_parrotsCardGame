@@ -1,91 +1,99 @@
-body{
-  background-color: #EEF9BF;
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-.topBar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 66px;
-letter-spacing: -0.004em;
-color: #75B79E;
-  
-}
-main{
-  display: flex;
-  justify-content: center;
-}
-.listCards{
-  
-  display: flex;
-  flex-wrap:wrap;
-  align-items: center;
-  justify-content: center;
-  
-  width: 1065px;
-  height: 500px;
-  
-
-}
-.card{
-  
-  margin: 17px 17px 0px 0px;
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #ebe2cb;
 }
 
-.face{
-  height: 147px;
+h1 {
+    width: 100%;
+    height: auto;
+    margin: 40px auto 47px auto;
+    font-size: 56px;
+    font-weight: 700;
+    color: #c9902e;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 151px;
+    height: 146px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.face {
+    width: 117px;
+    height: 146px;
+    background-color: #d3b180;
+    border: 1px solid #c0a081;
+    border-radius: 5px;
+    background-image: url("midia/eevee.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 25% 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    box-shadow: 3px 3px 8px #969696;
+}
+
+.back {
   width: 117px;
-  background: #A7E9AF;
-  border: 1px solid #99CEA8;
+  height: 146px;
+  background-color: #eecd9e;
+  border: 3px solid #ffbd7a;
   border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  box-shadow: 3px 3px 8px #969696;
 }
 
-img{
-  height: 100px;
+.back img {
   width: 100px;
-
-}
-
-
-.hidden {
-  display: none;
-}
-.hiddenFront{
-  display: none;
+  height: auto;
+  -webkit-filter: drop-shadow(3px 3px 3px #686868);
+  filter: drop-shadow(3px 3px 3px #686868);
 }
 
 
 
-@media (max-width: 600px){
-  .topBar{
-    font-size: 28px;
-    transition: all .7s linear;
-  }
+@media (max-width: 415px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
