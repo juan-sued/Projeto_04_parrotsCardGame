@@ -69,15 +69,28 @@ function embaralhar() {
 }
 
 function virar(element) {
-  element.querySelector(".front").classList.add("hiddenFront");
-  element.querySelector(".back").classList.remove("hidden"); // coloca um display none no primeiro frontcard que ler
-  //                                                              // tira o hidden do primeiro gif
-}
+  const front = element.querySelector(".front");
+  front.classList.add("hiddenFront");
 
-// carta escolhida = frontOn OFF
-// adicionar na array
-//embaralhar a array
-// pegar as cartas da array
+  const back = element.querySelector(".back");
+  back.classList.remove("hidden");
+
+  let fistCard;
+  let secondCard;
+  if (!fistCard) {
+    fistCard = element.innerHTML; // se fist card tiver valor, vai colocar o valor da carta no fistCard
+  }
+  secondCard = element.innerHTML;
+
+  if (fistCard === secondCard) {
+    console.log("2 cartas iguais");
+  } else {
+    console.log("2 cartas diferentes");
+
+    element.querySelector(".front").classList.remove("hiddenFront");
+    element.querySelector(".back").classList.add("hidden");
+  }
+}
 
 // quando clicar
 // adicionar numa array de cartas selecionadas
