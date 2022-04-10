@@ -41,10 +41,9 @@ function arrumarCartas() {
 
   for (let i = 0; i < numeroDeCartas; i++) {
     cardList.push(
-      `<div class='card'/>
-      <div class='face front'> <img src='img/front.png' alt='' /></div>
-      <div class='face back'"> <img src='img/${imagensCartas[imgCount]}' alt=''/></div>
-     
+      `<div class='card'onClick = "virar(this)"/>
+      <div class='face back hidden'>  <img class="imgBack" src='img/${imagensCartas[imgCount]}' alt=''/></div>
+      <div class='face front'" > <img src='img/front.png' alt=''/></div>
       </div>`
     );
     if (i % 2 === 1) {
@@ -67,11 +66,21 @@ function embaralhar() {
   function comparador() {
     return Math.random() - 0.5;
   }
-
-  function virarCarta(elemento) {
-    elemento.classList.toggle("flip");
-  }
 }
+
+function virar(element) {
+  element.querySelector(".front").classList.add("hiddenFront");
+  element.querySelector(".back").classList.remove("hidden"); // coloca um display none no primeiro frontcard que ler
+  //                                                              // tira o hidden do primeiro gif
+}
+
+// carta escolhida = frontOn OFF
 // adicionar na array
 //embaralhar a array
 // pegar as cartas da array
+
+// quando clicar
+// adicionar numa array de cartas selecionadas
+// comparar se as duas são iguais
+// se iguais, levar para outra array de cartas certas
+// ganha se as cartas da array de cartas certas tiver as mesmas cartas da array inicial

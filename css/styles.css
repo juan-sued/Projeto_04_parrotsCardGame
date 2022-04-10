@@ -29,12 +29,14 @@ main{
   
   width: 1065px;
   height: 500px;
-  padding-left: 34px;
+  
 
 }
 .card{
-  transform-style: preserve-3d;
+  
+  margin: 17px 17px 0px 0px;
 }
+
 .face{
   height: 147px;
   width: 117px;
@@ -44,20 +46,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s;
-
-  
-  
-}
-.front{
-  transform: rotateY(180deg);
-  background-color: #A7E9AF;
-}
-.back{
-  background-color: #A7E9AF;
-}
-.flip{
-  transform: rotateY(180deg);
 }
 
 img{
@@ -66,8 +54,12 @@ img{
 
 }
 
-.efeito-virada{
-  transition: all 1s linear;
+
+.hidden {
+  display: none;
+}
+.hiddenFront{
+  display: none;
 }
 
 
