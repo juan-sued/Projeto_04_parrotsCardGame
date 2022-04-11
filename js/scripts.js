@@ -19,7 +19,7 @@ let cards = [
   "img/unicornparrot.gif",
 ];
 
-let numberOfCards = prompt("Com quantas cartas você quer jogar?");
+let numberOfCards = prompt("Com quantas cartas você quer jogar? (4~14)");
 while (numberOfCards % 2 !== 0 || numberOfCards < 4 || numberOfCards > 14) {
   numberOfCards = prompt("Insira um número par entre 4 e 14!");
 }
@@ -92,7 +92,7 @@ function turnSelectedCard(element) {
 function playAgain() {
   let anotherRoundInvite = prompt(
     "Que tal mais uma partida? (digite 'sim' ou 'não')"
-  ).toLocaleLowerCase;
+  );
 
   if (anotherRoundInvite === "sim") {
     {
