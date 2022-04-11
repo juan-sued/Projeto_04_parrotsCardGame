@@ -8,7 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100%;
-    background-color: #ebe2cb;
+    background-color: #EEF9BF
+    ;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
     margin: 40px auto 47px auto;
     font-size: 56px;
     font-weight: 700;
-    color: #c9902e;
+    color: #75B79E;
     text-align: center;
 }
 
@@ -43,8 +44,8 @@ ul {
 .face {
     width: 117px;
     height: 146px;
-    background-color: #d3b180;
-    border: 1px solid #c0a081;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
     border-radius: 5px;
     background-image: url("midia/eevee.png");
     background-size: 100px;
@@ -57,14 +58,14 @@ ul {
     backface-visibility: hidden;
     transition: all .5s;
     transform-style: preserve-3d;
-    box-shadow: 3px 3px 8px #969696;
+    box-shadow: 3px 3px 8px #c1bebe;
 }
 
 .back {
   width: 117px;
   height: 146px;
-  background-color: #eecd9e;
-  border: 3px solid #ffbd7a;
+  background-color:  #A7E9AF;
+  border: 1px solid #99CEA8;
   border-radius: 5px;
   object-fit: cover;
   object-position: center;
@@ -77,12 +78,24 @@ ul {
   transform-style: preserve-3d;
   box-shadow: 3px 3px 8px #969696;
 }
-
+.face img{
+  width: 100px;
+  height: 100px;
+}
 .back img {
   width: 100px;
   height: auto;
-  -webkit-filter: drop-shadow(3px 3px 3px #686868);
-  filter: drop-shadow(3px 3px 3px #686868);
+}
+.back-face {
+    transform: rotateY(180deg);
+}
+
+.selectedFrontFace {
+    transform: rotateY(-180deg);
+}
+
+.selectedBackFace {
+    transform: rotateY(0deg);
 }
 
 
