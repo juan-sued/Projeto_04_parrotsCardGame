@@ -15,7 +15,7 @@ body {
 h1 {
     width: 100%;
     height: auto;
-    margin: 40px auto 47px auto;
+    margin: 100px auto 150px auto;
     font-size: 56px;
     font-weight: 700;
     color: #75B79E;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .container {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: auto;
 }
@@ -47,7 +47,7 @@ ul {
     background-color: #A7E9AF;
     border: 1px solid #99CEA8;
     border-radius: 5px;
-    background-image: url("midia/eevee.png");
+   
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: 25% 40%;
@@ -99,13 +99,40 @@ ul {
 }
 
 
+.matchFrontFace {
+    transform: rotateY(-180deg);
+}
+
+.matchBackFace {
+    transform: rotateY(0deg);
+}
+
+.timer {
+    width: 100px;
+    height: 50px;
+    background-color: #A7E9AF;
+ 
+    border-radius: 8px;
+    color: #3e8045;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 90px;
+    left: 48%;
+    position: relative;
+}
+
 
 @media (max-width: 415px) {
 
     h1 {
         font-size: 40px;
     }
-
+    .timer {
+        left: 38%;
+        position: relative;
+    }
 
 }
 
